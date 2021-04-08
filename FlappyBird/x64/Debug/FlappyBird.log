@@ -1,0 +1,5 @@
+﻿  Game.cpp
+C:\Users\user\source\repos\FlappyBird\FlappyBird\Game.cpp(692,95): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\user\source\repos\FlappyBird\FlappyBird\Game.cpp(835,59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\user\source\repos\FlappyBird\FlappyBird\Game.cpp(855,59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  FlappyBird.vcxproj -> C:\Users\user\source\repos\FlappyBird\x64\Debug\FlappyBird.exe
