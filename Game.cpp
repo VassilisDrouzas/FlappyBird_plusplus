@@ -1,5 +1,5 @@
 #include "Game.h"
-#include "Game.h"
+
 
 
 int Game::getHighScore() {			//returns the current high score from the txt file
@@ -345,10 +345,10 @@ void Game::spawnPipe(game_difficulty difficulty)
 
 	}
 
-	//AddPipes();									//Χρησιμεύει στο να εντάξουμε τα αντικείμενα pipes στο vector
+	//AddPipes();									//Γ—Γ±Γ§Γ³Γ©Γ¬Γ¥Γ½Γ¥Γ© Γ³Γ΄Γ― Γ­Γ΅ Γ¥Γ­Γ΄ΓΓ®Γ―ΓµΓ¬Γ¥ Γ΄Γ΅ Γ΅Γ­Γ΄Γ©ΓªΓ¥ΓΓ¬Γ¥Γ­Γ΅ pipes Γ³Γ΄Γ― vector
 }
 /*
-void Game::AddPipes() {								//Προσθήκη στοιχείων τύπου Enemy στο vector pipes
+void Game::AddPipes() {								//ΓΓ±Γ―Γ³Γ¨ΓΓªΓ§ Γ³Γ΄Γ―Γ©Γ·Γ¥ΓΓΉΓ­ Γ΄Γ½Γ°Γ―Γµ Enemy Γ³Γ΄Γ― vector pipes
 	pipes.push_back(top1);
 	pipes.push_back(top2);
 	pipes.push_back(top3);
@@ -365,7 +365,7 @@ void Game::deletePipe()
 {
 	/*
 	for (auto iter : pipes) {
-															// Διαγραφή στοιχείων τύπου Enemy από το vector pipes με iterator.Χρησίμευε σε περίπτωση που θέλαμε να αποθηκεύσουμε τα pipes σε ένα vector.
+															// Γ„Γ©Γ΅Γ£Γ±Γ΅Γ¶Γ Γ³Γ΄Γ―Γ©Γ·Γ¥ΓΓΉΓ­ Γ΄Γ½Γ°Γ―Γµ Enemy Γ΅Γ°ΓΌ Γ΄Γ― vector pipes Γ¬Γ¥ iterator.Γ—Γ±Γ§Γ³ΓΓ¬Γ¥ΓµΓ¥ Γ³Γ¥ Γ°Γ¥Γ±ΓΓ°Γ΄ΓΉΓ³Γ§ Γ°Γ―Γµ Γ¨ΓΓ«Γ΅Γ¬Γ¥ Γ­Γ΅ Γ΅Γ°Γ―Γ¨Γ§ΓªΓ¥Γ½Γ³Γ―ΓµΓ¬Γ¥ Γ΄Γ΅ pipes Γ³Γ¥ ΓΓ­Γ΅ vector.
 		pipes.erase(pipes.cbegin(),pipes.cend());
 	}
 	*/
@@ -566,7 +566,7 @@ void Game::updateLevelScreen1(game_difficulty difficulty) {
 		}
 
 		/*
-		for (auto iter : pipes) {				//Συντομότερη λύση που προσπάθησα με iterator σε vector. Προέκυψαν περίεργα αποτελέσματα,για αυτό και δεν την χρησιμοποίησα τελικά..
+		for (auto iter : pipes) {				//Γ“ΓµΓ­Γ΄Γ―Γ¬ΓΌΓ΄Γ¥Γ±Γ§ Γ«Γ½Γ³Γ§ Γ°Γ―Γµ Γ°Γ±Γ―Γ³Γ°ΓΓ¨Γ§Γ³Γ΅ Γ¬Γ¥ iterator Γ³Γ¥ vector. ΓΓ±Γ―ΓΓªΓµΓΈΓ΅Γ­ Γ°Γ¥Γ±ΓΓ¥Γ±Γ£Γ΅ Γ΅Γ°Γ―Γ΄Γ¥Γ«ΓΓ³Γ¬Γ΅Γ΄Γ΅,Γ£Γ©Γ΅ Γ΅ΓµΓ΄ΓΌ ΓªΓ΅Γ© Γ¤Γ¥Γ­ Γ΄Γ§Γ­ Γ·Γ±Γ§Γ³Γ©Γ¬Γ―Γ°Γ―ΓΓ§Γ³Γ΅ Γ΄Γ¥Γ«Γ©ΓªΓ..
 			if (iter) {
 				(*iter).update_hard();
 			}
@@ -916,7 +916,7 @@ void Game::drawLevelScreen1(game_difficulty difficulty) {
 			bomb->draw_hard();
 		}
 		/*
-	   for (auto iter : pipes) {					//Συντομότερη λύση που προσπάθησα με iterator σε vector. Προέκυψαν περίεργα αποτελέσματα,για αυτό και δεν την χρησιμοποίησα τελικά..
+	   for (auto iter : pipes) {					//Γ“ΓµΓ­Γ΄Γ―Γ¬ΓΌΓ΄Γ¥Γ±Γ§ Γ«Γ½Γ³Γ§ Γ°Γ―Γµ Γ°Γ±Γ―Γ³Γ°ΓΓ¨Γ§Γ³Γ΅ Γ¬Γ¥ iterator Γ³Γ¥ vector. ΓΓ±Γ―ΓΓªΓµΓΈΓ΅Γ­ Γ°Γ¥Γ±ΓΓ¥Γ±Γ£Γ΅ Γ΅Γ°Γ―Γ΄Γ¥Γ«ΓΓ³Γ¬Γ΅Γ΄Γ΅,Γ£Γ©Γ΅ Γ΅ΓµΓ΄ΓΌ ΓªΓ΅Γ© Γ¤Γ¥Γ­ Γ΄Γ§Γ­ Γ·Γ±Γ§Γ³Γ©Γ¬Γ―Γ°Γ―ΓΓ§Γ³Γ΅ Γ΄Γ¥Γ«Γ©ΓªΓ..
 		   if (iter) {
 			   (*iter).draw_hard();
 
@@ -1033,7 +1033,7 @@ void Game::drawLevelScreen2(game_difficulty difficulty)
 			bomb->draw_hard();
 		}
 		/*
-	   for (auto iter : pipes) {					//Συντομότερη λύση που προσπάθησα με iterator σε vector. Προέκυψαν περίεργα αποτελέσματα,για αυτό και δεν την χρησιμοποίησα τελικά..
+	   for (auto iter : pipes) {					//Γ“ΓµΓ­Γ΄Γ―Γ¬ΓΌΓ΄Γ¥Γ±Γ§ Γ«Γ½Γ³Γ§ Γ°Γ―Γµ Γ°Γ±Γ―Γ³Γ°ΓΓ¨Γ§Γ³Γ΅ Γ¬Γ¥ iterator Γ³Γ¥ vector. ΓΓ±Γ―ΓΓªΓµΓΈΓ΅Γ­ Γ°Γ¥Γ±ΓΓ¥Γ±Γ£Γ΅ Γ΅Γ°Γ―Γ΄Γ¥Γ«ΓΓ³Γ¬Γ΅Γ΄Γ΅,Γ£Γ©Γ΅ Γ΅ΓµΓ΄ΓΌ ΓªΓ΅Γ© Γ¤Γ¥Γ­ Γ΄Γ§Γ­ Γ·Γ±Γ§Γ³Γ©Γ¬Γ―Γ°Γ―ΓΓ§Γ³Γ΅ Γ΄Γ¥Γ«Γ©ΓªΓ..
 		   if (iter) {
 			   (*iter).draw_hard();
 
