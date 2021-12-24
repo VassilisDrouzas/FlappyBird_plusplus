@@ -48,8 +48,8 @@ void Game::Player1Death() {
 	player1_crashed = true;
 	collision = true;
 	head_to_head_player2++;
-	if (head_to_head_player2 != temp2 + 1) {			//if head_to_head_player_1 increased more than 1,fix it to increase only by one.Useful for the bug where this variable
-		head_to_head_player2 = temp2 + 1;				// is increased by more than 1. Unfortunately sometimes it happens..
+	if (head_to_head_player2 != temp2 + 1) {			
+		head_to_head_player2 = temp2 + 1;				
 	}
 	temp2 = head_to_head_player2;
 
@@ -73,8 +73,8 @@ void Game::Player2Death() {
 
 	collision = true;
 	head_to_head_player1++;
-	if (head_to_head_player1 != temp1 + 1) {			//if head_to_head_player_1 increased more than 1,fix it to increase only by one.Useful for the bug where this variable
-		head_to_head_player1 = temp1 + 1;				// is increased by more than 1. Without this fix unfortunately sometimes it happens..
+	if (head_to_head_player1 != temp1 + 1) {			
+		head_to_head_player1 = temp1 + 1;				
 	}
 	temp1 = head_to_head_player1;
 	round_winner1 = true;
